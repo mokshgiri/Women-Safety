@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Family Safety</string>
+
+
+    <string name="image_contentDescription">image</string>
+    <string name="let_s_get_started_text">Let\'s Get started</string>
+    <string name="intro_text_description">Harmony Begins at Home: Elevating Security for Every Family Member</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">SIGN UP</string>
+
+    <!--TODO (Step 6: Add all the string values here.)-->
+    <!--START-->
+    <string name="sign_up_description_text">Enter your name, email id and password, to register with us.</string>
+    <string name="sign_in_description_text">Enter your email id and password, to login into the app.</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="msg">Message</string>
+    <string name="please_wait">Please Wait\n</string>
+    <string name="press_again_to_exit">Press again to exit</string>
+    <string name="my_profile">My Profile</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="mobile">Mobile</string>
+    <string name="update">UPDATE</string>
+    <string name="send">Send</string>
+    <string name="msg_description_text">Enter and send the message to your added contacts.</string>
+
+    <string name="create_board_title">Create Board</string>
+    <string name="create">CREATE</string>
+    <string name="board_name">Board Name</string>
+    <string name="contactName">Contact Name</string>
+    <string name="contact_relation_hint">Relation</string>
+    <string name="otherRelation">Enter Relation</string>
+    <string name="contactNumber">Contact Number</string>
+    <string name="addContactBtn">Add Contacts</string>
+    <string name="family_safety">FAMILY SAFETY</string>
+    <string name="contacts">CONTACTS</string>
+    <string name="map">MAP</string>
+    <string name="settings">SETTINGS</string>
+    <string name="profile">PROFILE</string>
+    <string name="emergency">Emergency</string>
+    <string name="profileSmall">Profile</string>
+    <string name="settingsSmall">Settings</string>
+    <string name="mapSmall">Map</string>
+    <string name="contactsSmall">Contacts</string>
+    <string name="selectedContactNumber">1</string>
+    <string name="phone">Phone</string>
+    <string name="gender">Gender</string>
+    <string name="address">Address</string>
+
+
+    <string name="add_member">Add Member</string>
+    <string name="cancel">CANCEL</string>
+    <string name="add">ADD</string>
+    <string name="search_member">Search Member</string>
+    <string name="edit">Edit</string>
+    <string name="upload">UPLOAD</string>
+    <string name="hello">Hello</string>
+    <string name="preferences_file_name">Login Preferences</string>
+    <string name="logout">LOGOUT</string>
+    <string name="google_maps_api_key">AIzaSyB7YOKjR_SzG8u3wiVUD4kAhrY3uitp38M</string>
+    <string name="whatsappAlert">Whatsapp Alert</string>
+    <string name="allRecordings">All Recordings</string>
+    <string name="back">Back</string>
+
+</resources>

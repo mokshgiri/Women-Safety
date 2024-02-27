@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    android:orientation="vertical"
+    tools:context=".fragment.ContactsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Settings Fragment" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/create_board_btn_marginTop"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/sf_pro_text_semibold"
+        android:background="@drawable/shape_button_rounded"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingTop="@dimen/btn_paddingTopBottom"
+        android:paddingBottom="@dimen/btn_paddingTopBottom"
+        android:text="@string/logout"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/btn_text_size" />
+
+</LinearLayout>

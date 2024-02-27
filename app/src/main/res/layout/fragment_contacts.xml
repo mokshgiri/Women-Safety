@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    tools:context=".fragment.ContactsFragment">
+
+<!--<LinearLayout -->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@color/bg_color"-->
+<!--    android:orientation="vertical"-->
+<!--    android:gravity="center">-->
+
+<!--    &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:text="No contacts" />-->
+
+    <ProgressBar
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/blue"/>
+
+    <Button
+        android:id="@+id/addContactsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+
+        android:layout_marginStart="@dimen/btn_marginStartEnd"
+        android:layout_marginTop="@dimen/sign_up_screen_btn_marginTop"
+        android:layout_marginEnd="@dimen/btn_marginStartEnd"
+        android:background="@drawable/shape_button_rounded"
+        android:fontFamily="@font/sf_pro_text_semibold"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingTop="@dimen/btn_paddingTopBottom"
+        android:paddingBottom="@dimen/btn_paddingTopBottom"
+        android:visibility="gone"
+        android:text="@string/addContactBtn"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/btn_text_size" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp" />
+
+
+
+<!--</LinearLayout>-->
+
+</RelativeLayout>

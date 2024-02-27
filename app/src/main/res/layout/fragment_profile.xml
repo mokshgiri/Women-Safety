@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    tools:context=".fragment.ProfileFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_centerInParent="true"
+        android:elevation="@dimen/card_view_elevation"
+        app:cardCornerRadius="@dimen/card_view_corner_radius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/card_view_layout_content_padding">
+
+
+            <FrameLayout
+                android:id="@+id/editProfilePicFrameLayout"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/userImageView"
+                    android:layout_width="@dimen/board_image_size"
+                    android:layout_height="@dimen/board_image_size"
+                    android:contentDescription="@string/image_contentDescription"
+                    android:src="@drawable/layer_circle_add_user_profile_image" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_camera"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:layout_gravity="right|bottom"
+                    android:src="@drawable/layer_circle_add_image"
+                    tools:ignore="RtlHardcoded" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/create_board_til_marginTop"
+                    android:layout_weight="9">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/name"
+                        android:inputType="text"
+                        android:textSize="@dimen/et_text_size" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/editName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:layout_weight="1"
+                    android:src="@drawable/layer_circle_edit_image"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/create_board_til_marginTop"
+                    android:layout_weight="9">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/phone"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:textSize="@dimen/et_text_size" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/editPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:src="@drawable/layer_circle_edit_image"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/create_board_til_marginTop"
+                    android:layout_weight="9">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/email"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:textSize="@dimen/et_text_size" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+<!--                <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                    android:id="@+id/editEmail"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="right|bottom"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:clickable="true"-->
+<!--                    android:focusable="true"-->
+<!--                    android:background="?selectableItemBackgroundBorderless"-->
+<!--                    android:src="@drawable/layer_circle_edit_image"-->
+<!--                    tools:ignore="RtlHardcoded" />-->
+            </LinearLayout>
+            <!--                <com.google.android.material.textfield.TextInputLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginTop="@dimen/create_board_til_marginTop">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginTop="25dp"-->
+<!--                android:weightSum="10">-->
+
+<!--                <Spinner-->
+<!--                    android:id="@+id/gender"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="9"-->
+<!--                    android:hint="@string/gender" />-->
+<!--                &lt;!&ndash;                </com.google.android.material.textfield.TextInputLayout>&ndash;&gt;-->
+
+<!--                <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                    android:id="@+id/editGender"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="right|bottom"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:clickable="true"-->
+<!--                    android:focusable="true"-->
+<!--                    android:background="?selectableItemBackgroundBorderless"-->
+<!--                    android:src="@drawable/layer_circle_edit_image"-->
+<!--                    tools:ignore="RtlHardcoded" />-->
+
+<!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/create_board_til_marginTop"
+                    android:layout_weight="9">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/address"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:textSize="@dimen/et_text_size" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/editAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:src="@drawable/layer_circle_edit_image"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+<!--            <Button-->
+<!--                android:id="@+id/btn_update"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="@dimen/create_board_btn_marginTop"-->
+<!--                android:background="@drawable/shape_button_rounded"-->
+<!--                android:foreground="?attr/selectableItemBackground"-->
+<!--                android:gravity="center"-->
+<!--                android:paddingTop="@dimen/btn_paddingTopBottom"-->
+<!--                android:paddingBottom="@dimen/btn_paddingTopBottom"-->
+<!--                android:text="@string/update"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:textSize="@dimen/btn_text_size" />-->
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- recording_item.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardView"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:id="@+id/childLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonPlay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:layout_weight="1"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="1dp"
+            android:textColor="@android:color/white"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/shape_button_rounded"
+            android:foreground="?attr/selectableItemBackground"/>
+
+                <Button
+                    android:id="@+id/buttonStop"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Stop"
+                    android:visibility="invisible"
+                    android:layout_marginHorizontal="20dp"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="1dp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/shape_button_rounded_red"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+            </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/currentPlayingText"
+        android:text="Currently Playing"
+        android:layout_marginVertical="10dp"
+        android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

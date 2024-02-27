@@ -1,0 +1,25 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Circular background -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#2196F3" />
+            <padding android:bottom="10dp"/>
+            <padding android:left="10dp"/>
+            <padding android:right="10dp"/>
+            <padding android:top="10dp"/>
+
+            <gradient
+                android:angle="360"
+                android:endColor="#0A80F5"
+                android:startColor="#0BCCEB"
+                android:type="linear" />
+
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+
+    <!-- Image on top of the circular background -->
+    <item android:drawable="@drawable/baseline_settings_24_blue" />
+
+</layer-list>
